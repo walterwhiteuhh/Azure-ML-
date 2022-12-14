@@ -1,13 +1,13 @@
 from pathlib import Path
 
-from azureml.core import (
+from azure.ai.ml import (
     Environment,
     Experiment,
     Run,
     ScriptRunConfig,
     Workspace,
 )
-from azureml.core.compute import AmlCompute, ComputeTarget
+from azure import AmlCompute, ComputeTarget
 
 def find_or_create_compute_target(
     workspace,
